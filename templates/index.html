@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}HHEF — Harmony for Health and Education{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <img src="{{ url_for('static', filename='kids.jpg') }}" alt="HHEF Hero Image">
+  <div class="hero-text">
+    <h1>Harmony for Health and Education Foundation</h1>
+  </div>
+</section>
+
+<section class="mission-section">
+  <h2>Our Mission</h2>
+  <p>
+    Harmony for Health and Education Foundation (HHEF) empowers communities through education, health initiatives, water sanitation, and sustainable development. We believe in practical, innovative solutions designed by and for the people we serve.
+  </p>
+</section>
+
+<section class="scroll-gallery">
+  <div class="scroll-track">
+    <!-- First set of images -->
+    <img src="{{ url_for('static', filename='medical.jpg') }}" alt="Medical">
+    <img src="{{ url_for('static', filename='donation.jpg') }}" alt="Donation">
+    <img src="{{ url_for('static', filename='education.jpg') }}" alt="Education">
+    <img src="{{ url_for('static', filename='waterstream.jpg') }}" alt="Water">
+
+    <!-- Duplicate set for infinite loop illusion -->
+    <img src="{{ url_for('static', filename='medical.jpg') }}" alt="Medical">
+    <img src="{{ url_for('static', filename='donation.jpg') }}" alt="Donation">
+    <img src="{{ url_for('static', filename='education.jpg') }}" alt="Education">
+    <img src="{{ url_for('static', filename='waterstream.jpg') }}" alt="Water">
+  </div>
+</section>
+
+
+{% endblock %}
